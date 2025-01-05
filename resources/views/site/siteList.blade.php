@@ -37,7 +37,7 @@
 
     <div class="sub-content pb-0 pt-0">
         <ul class="item-content">
-          @if (Auth::check() && Auth::user()->role === 'admin')
+          @if (Auth::check() && Auth::user()->hasRole('admin'))
             <li><a href="#" id="select-all-link" class="select-all"><i class="fa-solid fa-square-check"></i> Select All</a></li>
             <li><a href="#" id="deselect-all-link" class="deselect-all"><i class="fa-solid fa-x"></i> Deselect</a></li>
             <li><a href="#" id="delete-selected-link" class="delete-selected"><i class="fa-solid fa-trash-alt"></i> Delete Selected</a></li>
@@ -70,7 +70,7 @@
           data-loading-font-size="16px">
           <thead class="wrap-text">
             <tr>
-              @if (Auth::check() && Auth::user()->role === 'admin')
+              @if (Auth::check() && Auth::user()->hasRole('admin'))
               <th></th>
               @endif
               <th class="text-center" data-field="no" data-sortable="true">No</th>
@@ -86,7 +86,7 @@
               <th class="text-center" data-field="remark" data-sortable="true">Remark</th>
               <th class="text-center" data-field="created_at" data-sortable="true">Created At</th>
               <th class="text-center" data-field="last_update" data-sortable="true">Last Update</th>
-              @if (Auth::check() && Auth::user()->role === 'admin')
+              @if (Auth::check() && Auth::user()->hasRole('admin'))
               <th class="text-center">Action</th>
               @endif
             </tr>
@@ -94,7 +94,7 @@
           <tbody>
             @forelse ($dataSitelist as $sitelist)
                 <tr>
-                  @if (Auth::check() && Auth::user()->role === 'admin')
+                  @if (Auth::check() && Auth::user()->hasRole('admin'))
                     <td class="text-center">
                         <input type="checkbox" name="ids[]" value="{{ $sitelist->id_sitelist }}" class="row-checkbox">
                     </td>
@@ -117,7 +117,7 @@
                     <td class="text-center">{{ $sitelist->remark }}</td>
                     <td class="text-center">{{ $sitelist->created_at }}</td>
                     <td class="text-center">{{ $sitelist->last_update }}</td>
-                    @if (Auth::check() && Auth::user()->role === 'admin')
+                    @if (Auth::check() && Auth::user()->hasRole('admin'))
                     <td class="text-center">
                         <a href="{{ url('sitelist/'.$sitelist->id_sitelist.'/edit') }}" style="margin-right: 10px;">
                             <i class="fa fa-edit"></i>
