@@ -1,0 +1,46 @@
+.tab-content {
+    margin: 0; /* Menghapus jarak atas tab content */
+    padding: 0;    /* Menghapus padding default */
+}
+
+.tab-pane {
+    padding: 0rem; /* Menambahkan padding jika diinginkan, sesuaikan sesuai kebutuhan */
+}
+
+.nav-tabs-container {
+    width: 100%; /* Lebar penuh viewport */
+    margin-bottom: 0; /* Menghapus margin */
+    padding-bottom: 0; /* Menghapus padding */
+    overflow-x: hidden; /* Menghindari scroll horizontal */
+}
+
+.nav-tabs {
+    background-color: #f5f9fd;
+    width: 100%; /* Lebar penuh untuk nav-tabs */
+    margin-bottom: 0; /* Menghapus margin bawah */
+}
+
+.nav-tabs .nav-link {
+    flex: 1; /* Membuat setiap tab mengisi ruang yang tersedia */
+    padding: 0.5rem 1rem; /* Padding untuk tab */
+    border-radius: 0; /* Menghapus radius sudut untuk tab kotak */
+    width: 150px; /* Menetapkan lebar tetap untuk tab, sesuaikan sesuai kebutuhan */
+    background-color: #f5f9fd;
+    color: #444444;
+    height: 60px; /* Menetapkan tinggi tetap untuk tab, sesuaikan sesuai kebutuhan */
+    line-height: 40px; /* Menyelaraskan teks di tengah secara vertikal, sesuaikan sesuai kebutuhan */
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6 !important; /* Menambahkan border bawah */
+}
+
+.nav-tabs .nav-link:hover {
+    border-top: 2px solid #0a5eac !important; /* Warna border untuk tab aktif */
+    border-radius: 0; /* Menghapus radius sudut untuk tab aktif */
+}
+
+.nav-tabs .nav-link.active {
+    border-top: 2px solid #0a5eac !important; /* Warna border untuk tab aktif */
+    border-radius: 0; /* Menghapus radius sudut untuk tab aktif */
+    border-bottom: 0 solid #dee2e6 !important;
+}

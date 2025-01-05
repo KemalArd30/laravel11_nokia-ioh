@@ -1,0 +1,102 @@
+.table-responsive {
+    width: 100%; /* Pastikan table-responsive mengambil seluruh lebar */
+    margin: 0 auto; 
+    padding: 5px; 
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    vertical-align: middle;
+    border: 1px solid #dee2e6; /* Border untuk setiap cell */
+    white-space: nowrap; /* Mencegah teks dibungkus */
+    overflow: hidden;    /* Menyembunyikan teks yang meluap */
+    text-overflow: ellipsis; /* Menambahkan elipsis jika teks meluap */
+}
+
+.table thead th {
+    background-color: #f5f9fd;
+    color: #444;
+    border-top: 1px solid #dee2e6;
+}
+
+.table tbody tr {
+    height: 10px;
+    margin: 0;
+}
+
+.table tbody tr:hover,
+.table tbody tr:hover td {
+    background-color: #f5f5f5;
+}
+
+.table .text-center {
+    text-align: center;
+}
+
+.table .text-left {
+    text-align: left;
+}
+
+.table .text-right {
+    text-align: right;
+}
+
+.table .no-border {
+    border: none;
+}
+
+.table th:first-child,
+.table td:first-child {
+    width: 50px;
+}
+
+.table tbody tr.checked,
+table tbody tr.checked td {
+    background-color: #f5f5f5 !important;
+}
+
+.table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.wrap-text {
+    white-space: normal; /* Membungkus teks pada baris */
+    word-wrap: break-word; /* Memecah kata yang panjang */
+    overflow-wrap: break-word; /* Mendukung browser modern */
+}
+
+.no-border-collapse td {
+    border: none !important; /* Menghapus border pada kolom */
+}
+
+/* Atur hover khusus untuk baris collapse */
+.table tbody tr.collapse:hover {
+    background-color: transparent !important; /* Menghapus perubahan warna hover pada baris collapse */
+}
+
+.table tbody tr.collapse {
+    background-color: transparent; /* Atur background default jika perlu */
+}
+
+.bootstrap-table .search {
+    width: 95%; /* Wrapper search box mengikuti lebar induk */
+    box-sizing: border-box; /* Hitung padding ke dalam lebar elemen */
+}
+
+.bootstrap-table .search input {
+    width: 95%; /* Input field mengikuti lebar wrapper */
+    box-sizing: border-box; /* Hitung padding ke dalam lebar elemen */
+}

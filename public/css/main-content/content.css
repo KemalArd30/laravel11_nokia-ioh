@@ -1,0 +1,7 @@
+.bg-body.rounded.shadow-sm {
+        margin: 0;
+        padding: 0;
+        border: 1px solid #ccc; /* Mengubah warna border menjadi #444 */
+        width: 100%;
+        max-width: 100%;
+}

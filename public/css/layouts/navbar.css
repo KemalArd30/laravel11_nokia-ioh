@@ -1,0 +1,40 @@
+.navbar-custom {
+    background-color: #1888dd; /* Ganti dengan kode warna HEX yang kamu inginkan */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff; /* Ganti dengan kode warna HEX yang diinginkan untuk teks */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #000000; /* Ganti dengan kode warna HEX untuk warna teks ketika di-hover */
+}
+
+.notifications {
+    background: none;
+    top: 8px;
+    border: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    margin-right: 15px;
+    line-height: 35px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 0.75rem; /* Ukuran font badge lebih kecil */
+    padding: 0.25em 0.4em; /* Padding badge disesuaikan */
+    border-radius: 1rem; /* Bentuk badge bulat */
+    background-color: #dc3545; /* Warna badge merah */
+    line-height: 45px;
+}
+
+.small-badge {
+    font-size: 0.75rem !important; /* Ukuran font badge lebih kecil */
+    padding: 0.25em 0.4em !important; /* Padding badge disesuaikan */
+    border-radius: 1rem !important; /* Bentuk badge bulat */
+}

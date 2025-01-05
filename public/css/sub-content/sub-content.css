@@ -1,0 +1,75 @@
+.sub-content {
+    display: flex;
+    flex-direction: column; /* Pastikan item-content dan search-bar berada dalam kolom vertikal */
+    align-items: stretch; /* Pastikan item-content menggunakan lebar penuh */
+    justify-content: space-between;
+}
+
+.item-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%; /* Pastikan seluruh sub-content menggunakan lebar penuh */
+}
+
+.item-content li {
+    flex: 1; /* Setiap item akan memiliki lebar yang sama */
+}
+
+.item-content a {
+    font-size: 12px;
+    display: block; /* Agar a mengambil seluruh ruang dalam li */
+    padding: 10px;
+    color: #444;
+    text-decoration: none;
+    text-align: center;
+    border-left: 1px solid #ccc !important;  /* Garis batas di sebelah kiri */
+    border-right: 1px solid #ccc ; /* Garis batas di sebelah kanan */
+    border-bottom: 1px solid #ccc; /* Garis batas di bawah */
+}
+
+.item-content a:first-child {
+    border-left: none; /* Menghilangkan garis batas di sebelah kiri untuk item pertama */
+}
+
+.item-content a:last-child {
+    border-right: none; /* Menghilangkan garis batas di sebelah kiri untuk item terakhir */
+}
+
+.item-content a:hover {
+    background-color: #f5f5f5; /* Warna latar belakang saat hover */
+}
+
+.item-content i {
+    margin-right: 5px;
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 30px; /* Padding kiri lebih besar untuk memberi ruang untuk ikon */
+    border: 0px;
+    font-size: 14px;
+    box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+}
+
+.search-bar input::placeholder {
+    color: #888; /* Warna placeholder jika perlu */
+}
+
+.search-bar::before {
+    content: "\f002"; /* Kode Font Awesome untuk ikon pencarian */
+    font-family: "Font Awesome 5 Free"; /* Nama font jika menggunakan Font Awesome 5 */
+    font-weight: 900; /* Font-weight jika menggunakan Font Awesome 5 */
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Posisi ikon dari kiri */
+    transform: translateY(-50%); /* Menyejajarkan ikon secara vertikal */
+    color: #888; /* Warna ikon jika perlu */
+    font-size: 16px; /* Ukuran ikon */
+}
