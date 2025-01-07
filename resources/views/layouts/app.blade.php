@@ -175,13 +175,11 @@
                 <!-- Sub Tabs -->
                 <div class="sub-tabs-container">
                     <ul class="nav sub-nav-tabs">
-                        @if (Auth::check() && Auth::user()->hasRole('admin'))
                         <li class="nav-item">
                             <a href='{{ url('tss/create') }}' class="nav-link"><i class="fa-solid fa-file-import fa-2x d-block"></i>
                                 <span class="pt-2">PBI TSS</span>
                             </a>
                         </li>
-                        @endif
                         <li class="nav-item">
                             <a href='{{ url('tss') }}' class="nav-link"><i class="fa-solid fa-table-list fa-2x d-block"></i>
                                 <span class="pt-2">TSS</span>
@@ -201,13 +199,11 @@
                 <!-- Sub Tabs -->
                 <div class="sub-tabs-container">
                     <ul class="nav sub-nav-tabs">
-                        @if (Auth::check() && Auth::user()->hasRole('admin'))
                         <li class="nav-item">
                             <a href='{{ url('implementasi/create') }}' class="nav-link"><i class="fa-solid fa-file-import fa-2x d-block"></i>
                                 <span class="pt-2">PBI PROJECT</span>
                             </a>
                         </li>
-                        @endif
                         <li class="nav-item">
                             <a href='{{ url('implementasi') }}' class="nav-link"><i class="fa-solid fa-tower-broadcast fa-2x d-block"></i>
                                 <span class="pt-2">ON AIR</span>
@@ -262,13 +258,11 @@
                 <!-- Sub Tabs -->
                 <div class="sub-tabs-container">
                     <ul class="nav sub-nav-tabs">
-                        @if (Auth::check() && Auth::user()->hasRole('admin'))
                         <li class="nav-item">
                             <a href='{{ url('pbiWcc/create') }}' class="nav-link"><i class="fa-solid fa-file-import fa-2x d-block"></i>
                                 <span class="pt-2">PBI WCC</span>
                             </a>
                         </li>
-                        @endif
                         <li class="nav-item">
                             <a href='{{ url('wccFullPayment') }}' class="nav-link"><i class="fa-solid fa-coins fa-2x d-block"></i>
                                 <span class="pt-2">WCC Full Pay</span>

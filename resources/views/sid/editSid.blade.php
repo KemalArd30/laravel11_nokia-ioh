@@ -5,7 +5,6 @@
 <link href="{{ asset('css/main-content/content.css') }}" rel="stylesheet">
 <form action="{{ route('sid.update', $dataSidList->id_tss) }}" method="POST">
     @csrf
-    @method('PUT')
     <div class="my-0 p-5 bg-body rounded shadow-sm mt-2">
         <div class="fs-2 mb-3 row">Update SID</div>
 

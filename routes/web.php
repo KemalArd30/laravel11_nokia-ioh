@@ -55,6 +55,7 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     // Route Import
     Route::post('/sitelist/import', [SitelistController::class, 'import'])->name('sitelist.import');
     Route::post('/filenaming/import', [FileNamingController::class, 'import'])->name('filenaming.import');
+    Route::get('/tss/create', [TssController::class, 'create'])->name('tss.create');
     Route::post('/tss/import', [TssController::class, 'import'])->name('tss.import');
     Route::get('/implementasi/create', [ImplementasiController::class, 'create'])->name('implementasi.create');
     Route::post('/implementasi/import', [ImplementasiController::class, 'import'])->name('implementasi.import');
@@ -108,6 +109,16 @@ Route::middleware(['auth', 'role:admin|user'])->group(function () {
     // route Edit/Update Acceptance
     Route::get('acceptance/{id_implementasi}/edit', [AcceptanceController::class, 'edit'])->name('acceptance.edit');
     Route::post('acceptance/{id_implementasi}/update', [AcceptanceController::class, 'update'])->name('acceptance.update');
+
+    // Route Import
+    Route::post('/sitelist/import', [SitelistController::class, 'import'])->name('sitelist.import');
+    Route::post('/filenaming/import', [FileNamingController::class, 'import'])->name('filenaming.import');
+    Route::get('/tss/create', [TssController::class, 'create'])->name('tss.create');
+    Route::post('/tss/import', [TssController::class, 'import'])->name('tss.import');
+    Route::get('/implementasi/create', [ImplementasiController::class, 'create'])->name('implementasi.create');
+    Route::post('/implementasi/import', [ImplementasiController::class, 'import'])->name('implementasi.import');
+    Route::post('/wcc/import-full-payment', [PbiWccController::class, 'importFullPay'])->name('wcc.import-full-payment');
+    Route::post('/wcc/import-partial-payment', [PbiWccController::class, 'importPartialPay'])->name('wcc.import-partial-payment');
 });
 
 
